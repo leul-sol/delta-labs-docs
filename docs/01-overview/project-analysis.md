@@ -595,7 +595,7 @@ The **Course Module** is the heart of Delta Labs with 264 files organized into:
 
 ```
 Course/
-├── components/        # Shared course components
+├── views/             # Module-specific views
 ├── context/          # CourseContext
 ├── features/         # Feature-based organization
 │   ├── dashboard/

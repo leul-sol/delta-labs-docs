@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Delta Labs - Coding Standards & Best Practices
 
 > **Version**: 1.0.0  
@@ -33,7 +37,7 @@
 src/
 ├── modules/
 │   └── [ModuleName]/
-│       ├── components/          # Module-specific components
+│       ├── views/               # Module-specific views (composed of library components)
 │       ├── context/             # Context providers
 │       ├── features/            # Feature-based sub-modules
 │       ├── routing/             # Routing configuration

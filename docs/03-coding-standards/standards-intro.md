@@ -1,4 +1,8 @@
-﻿# Coding Standards
+﻿---
+sidebar_position: 1
+---
+
+# Overview
 
 Code quality and convention documentation.
 

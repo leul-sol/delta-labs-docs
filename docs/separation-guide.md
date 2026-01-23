@@ -140,7 +140,7 @@
 - How to compose layout
 
 **Coding Standards Answers**:
-- File location (`modules/Dashboard/pages/`)
+- File location (`modules/Dashboard/views/`)
 - File naming (DashboardPage.tsx)
 - Import organization
 - Context usage pattern

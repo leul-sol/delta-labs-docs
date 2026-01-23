@@ -630,9 +630,9 @@ export type {
 import type { [Module]Route } from '../types/routeTypes';
 
 // Lazy-loaded components
-const DashboardPage = React.lazy(() => import('../pages/DashboardPage'));
-const DetailPage = React.lazy(() => import('../pages/DetailPage'));
-const ListPage = React.lazy(() => import('../pages/ListPage'));
+const DashboardPage = React.lazy(() => import('../views/DashboardPage'));
+const DetailPage = React.lazy(() => import('../views/DetailPage'));
+const ListPage = React.lazy(() => import('../views/ListPage'));
 
 export const [module]Routes: [Module]Route[] = [
   {
@@ -728,7 +728,7 @@ export function use[Module]Navigation() {
 
 ```
 src/modules/[ModuleName]/
-├── components/
+├── views/
 │   ├── [Component1]/
 │   │   ├── [Component1].tsx
 │   │   ├── index.ts
@@ -739,11 +739,11 @@ src/modules/[ModuleName]/
 │   └── index.ts
 ├── features/
 │   ├── [feature1]/
-│   │   ├── components/
+│   │   ├── views/
 │   │   ├── hooks/
 │   │   └── index.ts
 │   └── [feature2]/
-│       ├── components/
+│       ├── views/
 │       ├── hooks/
 │       └── index.ts
 ├── routing/
@@ -785,8 +785,8 @@ export { [Module]Provider, use[Module] } from './context/[Module]Context';
 // COMPONENT EXPORTS
 // ============================================================================
 
-export { default as [Module]Page } from './components/[Module]Page';
-export { default as [Module]Layout } from './components/[Module]Layout';
+export { default as [Module]Page } from './views/[Module]Page';
+export { default as [Module]Layout } from './views/[Module]Layout';
 
 // ============================================================================
 // TYPE EXPORTS
